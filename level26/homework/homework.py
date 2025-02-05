@@ -1,43 +1,49 @@
-# ages ={ 15, 15, 16, 16, 16, 16, 16, 16, 15, 17, 17, 17, 17, 19, 21, 21, 23, 25, 25, 26, 32}
-
-# average_age = sum(ages) / len(ages)
-
-name_list = ["გიორგი", "ანა", "გიორგი", "მარიამი", "გიორგი"]
-my_name = "გიორგი"
-
-result = 0
-for name in name_list:
-    if name == my_name:
-        result += 1
-
-print(f"{my_name}{result} ")
-
-name_list = ["გიორგი", "ანა", "გიორგი", "მარიამი", "გიორგი"]
-my_name = "გიორგი"
-
-count = name_list.count(my_name)
-
-print(f"{my_name}{count}")
+age=[ 15,15,16,16,16,16,16,16,15,17,17,17,17,19,21,21,23,25,25,26,32 ]
 
 
-import random
+avg_age = sum(age) / len(age)
+
+print(age.count(16))
 
 
-random_numbers = [random.randint(1, 100) for _ in range(20)]
-print( random_numbers)
 
 
-even_numbers = [num for num in random_numbers if num % 2 == 0]
-print( even_numbers)
+name =["გიორგი","ანანო","სოფო","ვანო","თაზო" ]
+name1="გიორგი"
 
+count=0
+for i in name :
+    if i == name1:
+        count +=1
+print(count)
 
-for i in range(1, 11):
-  
-   
-    if i % 2 != 0:
-        print(i)
+print(name.count(name1))
 
-names = ["თამარი", "გიორგი", "ანა", "თეონა", "მარიამი"]
-filtered_names = [name for name in names if not name.startswith('თ')]
+number=[12,14,13,15,16,17,18,19]
+number1=[]
+for i in number:
+    if i % 2 ==0:
+        number1.append(i)
 
-print( filtered_names)
+print(number1)
+
+number=[12,14,13,15,16,17,18,19]
+for i in number:
+    if i % 2==0:
+        number.remove(i)
+
+print(number)
+
+names = ["tiko" , "giorgi", "tinatini" , "tako" , "lasha", "toko", "beqa"]
+name4=[]
+for i in names:
+    if i[0]=="t":
+        name4.append(i)
+        
+print(name4)
+
+# 2)  შექმენით პროგრამა რომელიც დაითვლის სიაში რამდენჯერ მეორდება თქვენი სახელი არ გამოიყენოთ count ფუნქცია 
+# 3)  შექმენით პროგრამა რომელიც დაითვლის სიაში რამდენჯერ მეორდება თქვენი სახელი გამოიყენეთ count ფუნქცია
+# 4) შექმენით სია რომელშიც იქნება რენდომ რიცხვები მოთავსებული შემდეგ კი შექმენით მეორე სია რომელშიც გადაიტანთ პირველი სიიდან მხოლოდ ლუწ რიცხვებს
+# 5) შექმენით სია რომელშიც იქნება მოთავსებული რენდომ რიცხვები შემდეგ კი ამ სიიდან ამოშალეთ ყველა ლუწი რიცხვი
+# 6) შექმენით სია რომელშიც იქნება სახელები შემდეგ კი შექმენით პროგრამა რომელიც ამოშლის ყველა სახელს რომელიც "t" ასოზე იწყება და ჩაამატებს ახალ სიაში
