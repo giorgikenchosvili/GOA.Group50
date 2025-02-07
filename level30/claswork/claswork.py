@@ -12,7 +12,8 @@ def square():
     left(90)
 
 square()
-
+square()
+square()
 
 def plus():
     print(7+8)
@@ -52,3 +53,6 @@ print(hello("giorgi"))
 
 
 exitonclick()
+
+
+# def - დეფ ფუნქცი გვეხმარება მარტივა გამოვიძახოთ ერთიდაიგივე ცოდი ბევრჯერ შევამოკლოდ კოდი 

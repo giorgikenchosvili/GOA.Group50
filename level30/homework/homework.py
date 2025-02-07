@@ -32,7 +32,7 @@ number()
 # 3) შექმენით ფუნქცია რომელსაც გადაეცემა არგუმენტად რიცხვი შემდეგ კი მან უნდა დაგვიბრუნოს ლუწია ეს რიცხვი თუ კენტი
 def odd(a):
     return "even" if a % 2 ==0 else "odd"
-
+    
 
 num = int(input("enter number: "))
 print(odd(num))
@@ -51,4 +51,9 @@ number = int(input("enter number: "))
 print(  even_or_odd(number))
 
 
-# 5?
+# 5 შექმენით ფუნქცია რომელსაც არგუმენტად გადაეცემა რიცხვი შემდეგ კი ფუნქციამ უნდა დაგვიბრუნოს მისი საპირისპირო რიცხვი
+
+def number(n):
+    return -n 
+
+print(number(2))
