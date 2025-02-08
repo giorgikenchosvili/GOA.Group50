@@ -1,0 +1,36 @@
+<!-- 1) ჩამოწერეთ დღეს ნასწავლი სამივე CSS-ის კოდის წერის ხერხი და დაწერეთ თითოეულის განმარტება
+2) INLINE CSS-ის გამოყენებით შეუცვალეთ ტექსტის ფერი P-ტექსტს
+3) შეუცვალეთ ტექსტს ზომა font-size გამოყენებით გამოიყენეთ inline და internal css დააკვირდით რომელზე იმუშავებს და დაწერეთ დასკვნა ამის მიხედვით
+4) გადაიტანეთ სათაური ცენტრში external css-ის გამოყენებით 
+5) შეუცვალეთ უკანა ფონი ღილაკს  -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hello nigas</title>
+    <style>
+        p{
+            font-size: 200px;
+        }
+    </style>
+</head>
+<body>
+    <ol>
+        <td>inline  css</td>
+        <br>
+        <td>internal css</td>
+        <br>
+        <td>external css</td>
+    </ol>
+    <p style="color: red; font-size: 40px;"> hello</p> 
+    <!-- inline css  იმუშავებს და არა internal   css-->
+     <button>submit</button>
+
+</body>
+</html>
