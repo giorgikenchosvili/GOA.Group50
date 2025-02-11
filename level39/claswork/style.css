@@ -1,0 +1,19 @@
+#hh{
+    text-decoration: underline rgb(0, 255, 255);
+    background-color: red;
+}
+
+body{
+    background-color: black;
+    text-align: center;
+}
+
+#gg{
+    text-decoration: overline white;
+    background-color: red;
+}
+
+#jj{
+    text-decoration: line-through gold;
+    background-color: red;
+}

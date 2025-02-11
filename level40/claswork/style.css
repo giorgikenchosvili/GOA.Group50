@@ -1,0 +1,9 @@
+p{
+    text-transform: uppercase;
+    color: rgb(0, 255, 21);
+    text-shadow: 15px 10px  3px rgb(55, 0, 255);
+    font-size: 30px;
+}
+body{
+    background-color: black;
+}
