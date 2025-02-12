@@ -1,0 +1,21 @@
+.but{
+    background-color: black;
+    color: red;
+    box-shadow: 10px -20px 10px red;
+}
+
+.but:hover{
+    background-color: red;
+    color: black;
+    width: 150px;
+    height: 30px;
+    border:  5px black;
+    box-shadow: -10px -20px 10px red;
+    transition: 1s;
+}
+
+.but:active{
+    font-size: 30px;
+    border: 10px dashed black;
+    border-radius: 50%;
+}
