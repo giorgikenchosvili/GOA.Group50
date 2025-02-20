@@ -1,0 +1,22 @@
+ul{
+    list-style-type: georgian;
+    list-style-position: outside;
+    list-style-image: none;
+}
+
+.ul1{
+    list-style-type: circle;
+    list-style-position: inside;
+}
+
+.gg{
+    list-style-type: disc;
+}
+
+.ff{
+    list-style-type: none;
+}
+
+.hh{
+    list-style-type: square;
+}
