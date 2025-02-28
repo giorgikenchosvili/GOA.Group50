@@ -1,32 +1,33 @@
 # 1
-def custom_operator(a, b):
-    if b == 0:
-        return None  
+def func(a,b):
     return (a + b) + (a - b) + (a * b) + (a // b)
 
-def evaluate(equation):
-    if not equation:
-        return None
-    
-    tokens = equation.replace("@", " @ ").split()
-    numbers = list(map(int, tokens[::2]))
-    
-    result = numbers[0]
-    for num in numbers[1:]:
-        result = custom_operator(result, num)
-        if result is None:
-            return None
-    
-    return result
 
+def evaluate(equation):
+    
+    equation = equation.split(" @ ")
+    
+    l = []
+    
+    for i in equation:
+        l.append(int(i))
+    
+    
+    result = l[0]
+    
+    for i in l[1:]:
+        if i == 0 :
+            return None
+        result = func(result,i)
+    return result
 
 # 2
 def is_valid_walk(walk):
     if len(walk) != 10:
         return False
     
-    x = 0
-    y = 0 
+    x = 0 
+    y = 0
     
     for direction in walk:
         if direction == 'n':
@@ -42,9 +43,9 @@ def is_valid_walk(walk):
 
 # 3
 def expanded_form(num):
-    final = "" 
-    for element in str(num):  
-        if element == "0": 
+    final = ""  
+    for element in str(num): 
+        if element == "0":  
             continue  
         else:
             final += element + (len(str(num)) - (str(num).index(element) + 1)) * "0"

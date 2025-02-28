@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+body{
+    height: 100vh;
+    overflow-x: hidden;
+    background-image: url(./images/bg-desktop.svg);
+    background-color: hsl(257, 40%, 49%);
+}
+
+
+div{
+    position: relative;
+    left: 1000px;
+    display: flex;
+    flex-direction: column;
+    top:100px;
+    gap: 20px;
+}
+
+div h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 600px;
+    width: 400px;
+    color: #fff;
+}
+
+div p{
+    width: 500px;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400px;
+    color: #fff;
+
+    
+}
+
+.img22{
+    padding: 70px; 
+}
+.but{
+    width: 200px;
+    height: 60px;
+    border-radius: 50px;
+    background-color: hsl(300, 69%, 71%);
+    cursor: pointer;
+}
+
+.photo{
+    position: absolute;
+    top: 300px;
+    left: 150px;
+}
+
+footer{
+    position: relative;
+    top: 250px;
+    
+}
+
+.go{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 330px;
+    left: 1700px;
+    display: flex;
+    flex-direction: row;
+    font-size: 30px;
+    cursor: pointer;
+}
+

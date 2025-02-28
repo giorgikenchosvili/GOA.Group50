@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ff8800;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+
+.container {
+    background: white;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+h1 {
+    font-size: 24px;
+}
+
+
+.section {
+    margin-top: 15px;
+}
+
+
+.section2 {
+    background: #f8e1f4;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+ul, ol {
+    padding-left: 20px;
+}
+
+
+.nutrition {
+    font-weight: bold;
+}

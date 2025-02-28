@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 30px;
+    align-items: center;
+    background-color: black;
+}
+
+.h2{
+    font-family: Pacifico;
+    color: greenyellow;
+}
+
+div{
+    display: flex;
+    justify-content: space-between;
+    gap: 70px;
+    flex-direction: row;
+    font-family: roboto;
+    color: greenyellow;
+}
+
+ul{
+    display: flex;
+    justify-content: baseline;
+    gap: 40px;
+    list-style: none;
+    font-size: 1.3rem;
+}
+span{
+    cursor: pointer;
+    color: greenyellow;
+    font-size: 1.5rem;
+    text-decoration: ;
+
+}
+
