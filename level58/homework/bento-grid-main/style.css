@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "DM Sans", sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(245, 244, 246);
+}
+
+.parent{
+    display: grid;
+    grid-template-rows: 300px 100px  170px 270px;
+    grid-template-columns: 300px 300px 300px 300px;
+
+    gap: 20px;
+    
+}
+
+.center{
+    grid-row: 2/3;
+    display: flex;
+    grid-column: 2/3;
+
+}
+.center div{
+    width: 50%;
+}
+
+
+.toptop{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    grid-row-end: 3;
+    gap: 40px;
+    background-size: 200px;
+    background-color: hsl(31, 66%, 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-weight: 600;
+
+    /* padding-left: 00px; */
+}
+
+b{
+    color: hsl(256, 67%, 59%);
+}
+
+.toptop h1{
+    font-size: 40px;
+    line-height: 34px;
+}
+
+.createpost{
+    width: 200px ;
+
+
+}
+
+.centerright{
+    grid-row: 2/3;
+    grid-column-start: 2 ;
+    grid-column-end: 3;
+}
+
+.botomleft{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 5;
+    background-color: hsl(39, 100%, 71%);
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+
+    padding-left: 30px;
+
+}
+
+
+.botomleft img{
+    width: 90%;
+}
+.botomleft h1{
+    font-size: 40px;
+    line-height: 34px;
+}
+
+.parent div{
+    border-radius: 10px;
+}
+
+.top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsl(256, 67%, 59%);
+    grid-column-start: 2;
+    grid-column-end: 4;
+    gap: 20px;
+}
+
+.top div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    gap: 5px;
+
+}
+.top div img{
+    width: 200px;
+}
+
+.top div p{
+    font-size: 20px;
+    color: #ffffff;
+    opacity: 60%;
+}
+
+.top h1{
+    text-align: center;
+    font-size: 60px;
+    color: #ffffff;
+
+}
+
+.top b{
+    color:   hsl(39, 100%, 71%);
+}
+
+.botomcenter{
+    grid-row:4/5;
+    grid-column: 2/3;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 40px;
+}
+
+.botomcenter h1{
+    font-size: 50px;
+}
+
+.botomcenter p{
+    font-size: 18px;
+}
+
+.botomcenter img{
+    width: 70%;
+
+
+}
+
+
+
+.right{
+    background-color: hsl(254, 88%, 90%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    grid-column: 4/4;
+    grid-row: 1/4;
+    overflow-x: hidden;
+    gap: 30px;
+
+}
+
+.right img{
+    width: 400px;
+    height: 350px;
+    position: relative;
+    right: -100px;
+}
+
+.right h1{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 32px;
+}
+
+.right p{
+    font-size: 20px;
+
+}
+
+
+
+.chiled{
+    background-color: #fff;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 30px;
+    overflow: hidden;
+}
+.chiled img{
+    width: 400px;
+    position: relative;
+    right: 25px;
+
+}
+
+.chiled h2{
+    font-weight: 900;
+    font-size: 35px;
+    line-height: 32px;
+
+}
+
+.go{
+    background-color: hsl(39, 100%, 71%);
+    grid-column: 3/4;
+    grid-row: 2/4;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    overflow: hidden;
+    padding-left: 30px;
+    gap: 30px;
+    padding-top: 30px;
+    
+}
+.go h2{
+    line-height: 34px;
+    font-size: 35px;
+
+}
+
+.go img{
+    width: 90%;
+    position: relative;
+    bottom: -25px;
+}
+
+.bottom{
+    grid-row: 4/5;
+    grid-column: 3/5;
+    background-color: hsl(256, 67%, 59%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    gap: 10px;
+}
+
+.bottom img{
+    width: 250px;
+}
+
+.bottom h1{
+    line-height: 39px;
+    font-size: 45px;
+    color: #fff;
+}

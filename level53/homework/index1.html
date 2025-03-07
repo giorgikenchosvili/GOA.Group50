@@ -1,0 +1,52 @@
+<!-- 2. შექმენით მრგვალი, ლურჯი დივი, ანიმაციის მეშვეობით კი მისი მოძრაობა 
+ბურთის ხტუნავს მიამსგავსეთ, გამოიყენეთ @keyframe-ები. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            animation-name: roteit;
+            animation-duration: 2s;
+        }
+
+        @keyframes roteit{
+            from{
+
+            }
+
+            to{
+                transform:  translatey(-100px) translateX(50px)  rotate(190deg);
+
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+
+    <div>
+
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+body{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    /* border-radius: 50%;  */
+    transition: 4s;
+}
+
+div:hover{
+    /* transform: rotate(2800deg) scale(2); */
+    transition-delay: s;
+    transition: color 2s scale 2s ;
+    color: blue;
+    transition-timing-function: ease-in-out;
+    transform: translate(50px, 100px);
+}

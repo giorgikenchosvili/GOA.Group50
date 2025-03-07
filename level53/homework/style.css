@@ -1,0 +1,27 @@
+body{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+div{
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    animation-name: color;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+@keyframes color{
+    from{
+        background-color: red;
+    }
+
+    to{
+        transform: rotate(2000deg);
+        background-color: blue;
+    }
+}

@@ -1,0 +1,76 @@
+<!-- 2) შექმენით დივი რომელშიც გექნებათ მოთავსებული 
+ქარდები თითოეულ ქარდში იქნება რაიმე ფოტო, 
+ამ ქარდის სათაური და პატარა 
+აღწერა, ეს ქარდები უნდა იყოს რისპონსივი გამოიყენეთ გრიდი -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: black;
+        }
+
+        .parent{
+            width: 100%;
+            height: 90%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px,1fr));
+            gap: 20px;
+            border: 1px solid red;
+        }
+
+        .chiled{
+            width: 100%;
+            height: 150px;
+            align-items: center;
+            justify-items: center;
+            background-color: blue;
+        }
+
+
+
+
+
+    </style>
+</head>
+<body>
+    
+
+    <div class="parent">
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+        <div class="chiled"></div>
+    </div>
+
+
+</body>
+</html>

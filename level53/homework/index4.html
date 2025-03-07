@@ -1,0 +1,61 @@
+<!-- 5. შექმენით ანიმაცია, სადაც 200x200 div გაიზრდება 
+ზომაში, შემდეგ კი თავის 
+საწყის ზომაზე 2-ჯერ დაპატარავდება. -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+body{
+        background-color: #333;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    div{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+        animation-name: color;
+        animation-duration: 2s;
+        animation-delay: 2s;
+
+    }
+
+    div:hover{
+        transform: scale(0.5);
+        transition-delay: 1s;
+        transition: 1s;
+    }
+
+    @keyframes color{
+        from{
+            background-color: red;
+        }
+
+        to{
+            transform: scale(2) rotate(2000deg);
+            background-color: blue;
+        }
+    }
+
+
+    </style>
+</head>
+<body>
+    
+
+    <div>
+
+    </div>
+
+
+</body>
+</html>
