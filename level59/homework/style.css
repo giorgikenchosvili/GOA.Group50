@@ -44,8 +44,31 @@ main{
     padding-top: 100px;
     padding-left: 170px;
     gap: 40px;
+    position: relative;
+}
+
+.go{
+    background-color:#F0EFEB ;
+}
+
+.ho{
+    position: absolute;
+    /* z-index: -1; */
+    right: 400px;
+    width: 500px;
+    /* height: 521px; */
+    top: 20px;
 }
 
 main h1{
     font-size:60px ;
+    padding-left: 150px;
+}
+
+ .to{
+    padding-left: 150px ;
+}
+
+main p{
+    padding-left: 150px;
 }
