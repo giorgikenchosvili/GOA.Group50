@@ -14,11 +14,11 @@ console.log(false && true )
 
 
 const myName = "Giorgi";
-const userName = prompt("  enter your name:");
+const userName = prompt("  enter your name:")
 
 if (userName === myName) {
-    console.log("my name is same as you!");
+    console.log("my name is same as you!")
 } else {
-    console.log("our names ar not the same.");
+    console.log("our names ar not the same.")
 }
 
