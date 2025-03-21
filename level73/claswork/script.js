@@ -13,7 +13,6 @@ function math(numbers){
 
 
 
-// 1
 
 
 // 2
@@ -67,5 +66,15 @@ function countSheeps(sheep) {
 
 
 //   5
-
-
+function solution(number){
+  
+  let n3 = Math.floor((number - 1) / 3)
+  let n5 =  Math.floor((number - 1) / 5)
+  let n15 =  Math.floor((number - 1) / 15)
+  
+  let sum3 = n3 * ((n3 + 1) / 2) * 3
+  let sum5 = n5 * ((n5 + 1) / 2) * 5
+  let sum15 = n15*((n15 + 1) / 2)  * 15
+  return Math.floor(sum3 + sum5 - sum15)
+  
+}

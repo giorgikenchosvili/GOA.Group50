@@ -7,9 +7,12 @@ console.log(name.length)
 
 // 2)for-ციკლის გამოყენებით იპოვეთ სიაში ყველაზე დიდი და ყველაზე პატარა რიცხვები ?
 
-const numbers = [3, 7, 1, 9, 12, -5, 4, 8]
+let numbers = [3, 7, 1, 9, 12, -5, 4, 8]
 
+numbers.sort()
 
+console.log(numbers[0])
+console.log(numbers[numbers.length -1])
 
 
 
@@ -30,14 +33,23 @@ console.log(name2)
 
 // 4)შექმენით სია სადაც იქნება user-ების სახელი და გვარი და ახალ სიაში დაამატეთ ამ იუსერების  ინიციალები სახელის და გვარის პირველი ასოები, მაგალითად: გიორგი ბიბილაშვილი -> გ.ბ?
 
+let person = [
+    {name:"Giorgi",lastName: "Khmaladze"},
+    {name:"Vano",lastName:"Motiashvili"}
+    ]
 
+let inicials = []
+
+for(let i of person){
+    inicials.push(${i.name[0]}.${i.lastName[0]})
+}
 
 
 
 // 5)Splice მეთოდის გამოყენებით ჩაანაცვლეთ სიაში ყველა უარყოფითი რიცხვი 0 - ით
 
 
-const numbers2 = [3, -7, 1, -9, 12, -5, 4, 8];
+let numbers2 = [3, -7, 1, -9, 12, -5, 4, 8];
 
 for (let i = 0; i < numbers2.length; i++) {
     if (numbers2 < 0) {
@@ -50,11 +62,16 @@ console.log(numbers2);
 // 6)შექმენით სია შეიყვანეთ user-ების სახელი და გვარი თუ user-ების სახელი და გვრი იწყება პატარა ასოთი slice-მეთოდის გამოყენებით ამოშალეთ ასეთი სახელები და გვარები სიიდან?
 
 
-const users = ["გიორგი ბიბილაშვილი", "ანა კალანდაძე", "ნიკა მახარაძე", "ლუკა აბაშიძე"];
+let person2 = [
+    {name:"Giorgi",lastName: "Khmaladze"},
+    {name:"Vano",lastName:"Motiashvili"}
+    ]
 
+let inicials2 = []
 
-for(let i = 0;i< users.length; i++){
-
+for(let i of person){
+    inicials.push(`${i.name[0]}.${i.lastName[0]}`)
 }
 
+console.log(inicials)
 
