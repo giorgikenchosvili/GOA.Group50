@@ -1,0 +1,43 @@
+body {
+    background-color: #2c3046;
+    color: white;
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    margin: 40px 0;
+    color: #ff4da6;
+  }
+  
+  .set {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  .drum {
+    height: 100px;
+    width: 100px;
+    font-size: 2rem;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    color: #ff0066;
+    cursor: pointer;
+    box-shadow: 0 5px #999;
+  }
+  
+  .drum:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+  }
+  
+  .premium {
+    background-color: gold;
+    color: white;
+    font-weight: bold;
+  }
+  
