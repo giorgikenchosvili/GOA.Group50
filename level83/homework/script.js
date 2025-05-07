@@ -20,7 +20,8 @@ button.addEventListener('click',function(){
     main.style.backgroundColor = resultcolor;
 
     const audio = new Audio('./level83/homework/Click.mp3');
-    // audio.src = "Click.mp3";
+    audio.src = "Click.mp3";
+    audio.play()
 
 
     resultcolor ='#'

@@ -1,47 +1,78 @@
+const sounds =[
+  "./sounds/crash.mp3",
+  "./sounds/kick-bass.mp3",
+  "./sounds/snare.mp3",
+  "./sounds/tom-1.mp3",
+  "./sounds/tom-2.mp3",
+  "./sounds/tom-3.mp3",
+  "./sounds/tom-4.mp3"
+]
 
-const keySound = {
-    w: "crash.mp3",
-    a: "kick-bass.mp3",
-    s: "snare.mp3",
-    d: "tom-1.mp3",
-    j: "tom-2.mp3",
-    k: "tom-3.mp3",
-    l: "tom-4.mp3",
-  };
-  
-  let premiumUsed = false;
 
-  function playSound(key) {
-    const soundId = `sound-${key}`;     
-    const audio = document.getElementById(soundId);
-    if (audio) {
-      audio.currentTime = 0;
-      audio.play();
-    }
+let instruments =document.querySelectorAll("drum")
+document.addEventListener("keyup",function(e){
+  if(e.key == "w"){
+    instruments[0].computedStyleMap.border = "10px solid #3d465d"
   }
-  
-  
-
-  document.querySelectorAll(".drum").forEach((button) => {
-    button.addEventListener("click", function () {
-      const key = this.innerText.toLowerCase();
-      if (key === "p") {
-        triggerPremium();
-      } else {
-        playSound(key);
-      }
-    });
-  });
-  
-
-  function triggerPremium() {
-    if (!premiumUsed) {
-      const audio = document.getElementById("premiumSound");
-      audio.play();
-      premiumUsed = true;
-      alert("🎉 You used your one-time premium sound!");
-    } else {
-      alert("⚠️ Premium sound can only be used once!");
-    }
+  if(e.key == "a"){
+    instruments[1].computedStyleMap.border = "10px solid #3d465d"
   }
-  
+  if(e.key == "s"){
+    instruments[2].computedStyleMap.border = "10px solid #3d465d"
+  }
+  if(e.key == "d"){
+    instruments[3].computedStyleMap.border = "10px solid #3d465d"
+  }
+  if(e.key == "j"){
+    instruments[4].computedStyleMap.border = "10px solid #3d465d"
+  }
+  if(e.key == "k"){
+    instruments[5].computedStyleMap.border = "10px solid #3d465d"
+  }
+  if(e.key == "l"){
+    instruments[6].computedStyleMap.border = "10px solid #3d465d"
+  }
+})
+
+document.addEventListener("keydown",function(e){
+  if(e.key == "w"){
+    let lol = new Audio(sounds[0]) 
+    lol.play()
+    instruments[0].computedStyleMap.border = "10px solid #3d465d"
+  }
+  if(e.key == "a"){
+    let lol = new Audio(sounds[1]) 
+    lol.play()
+    instruments[1].computedStyleMap.border = "10px solid #3d465d"
+  }
+  if(e.key == "s"){
+    let lol = new Audio(sounds[2]) 
+    lol.play()
+    instruments[2].computedStyleMap.border = "10px solid #3d465d"
+  }
+  if(e.key == "d"){
+    let lol = new Audio(sounds[3]) 
+    lol.play()
+    instruments[3].computedStyleMap.border = "10px solid #3d465d"
+  }
+  if(e.key == "j"){
+    let lol = new Audio(sounds[4]) 
+    lol.play()
+    instruments[4].computedStyleMap.border = "10px solid #3d465d"
+  }
+  if(e.key == "k"){
+    let lol = new Audio(sounds[5]) 
+    lol.play()
+    instruments[5].computedStyleMap.border = "10px solid #3d465d"
+  }
+  if(e.key == "l"){
+    let lol = new Audio(sounds[6]) 
+    lol.play()
+    instruments[6].computedStyleMap.border = "10px solid #3d465d"
+  }
+})
+
+
+// let premium = document.getElementById("premium")
+
+// document.
