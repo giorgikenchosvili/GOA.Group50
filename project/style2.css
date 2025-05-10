@@ -57,7 +57,7 @@
         }
 
         .title {
-            color: red;
+            color: rgb(0, 255, 55);
             font-size: 20px;
             font-weight: bold;
         }
@@ -141,20 +141,6 @@
             width: 100%;
         }
 
-        .cart {
-            position: fixed;
-            top: 0;
-            right: 0;
-            width: 300px;
-            height: 100%;
-            background-color: #f9f9f9;
-            padding: 20px;
-            transform: translateX(300px);
-            /* transition: right 0.4s ease; */
-            z-index: 1000;
-
-        }
-
 
         .cart h3 {
             margin-top: 40px;
@@ -186,6 +172,10 @@
             font-weight: bold;
             cursor: pointer;
             color: #333;
+        }
+
+        html{
+            scroll-behavior: smooth;
         }
 
         .clear-cart-btn {
@@ -233,4 +223,30 @@
             border: none;
             border-radius: 10px;
             cursor: pointer;
+        }
+
+        #conteiner {
+            position: fixed;
+            display: none;
+            top: 0px;
+            right: 0px;
+            width: 300px;
+            height: 100%;
+            background-color: #ffffff;
+            padding: 20px;
+            z-index: 1000;
+        }
+
+        .goa-info section {
+            margin-bottom: 60px;
+            padding-top: 80px;
+            scroll-margin-top: 120px;
+        }
+
+        main {
+            padding: 80px 40px;
+            background-image: url('download (3).jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            color: white;
         }

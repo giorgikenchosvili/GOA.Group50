@@ -84,6 +84,8 @@
         </div>
     </main>
 
+
+
     <footer id="contact">
         <div class="footer-section">
             <h3>About GOA</h3>
@@ -104,6 +106,34 @@
             &copy; 2025 Goal-Oriented Academy. ყველა უფლება დაცულია.
         </div>
     </footer>
+
+    <div id="conteiner">
+        <div id="shopping" class="cart">
+            <button id="close-cart" class="close-cart-btn">X</button>
+            <h3>shopping-cart</h3>
+            <ul id="cart-items"></ul>
+            <button id="clear-cart" class="clear-cart-btn">clear</button>
+            <button id="pay-button" class="clear-cart-btn" style="background-color: green;">გადახდა</button>
+
+            <div id="payment-form" style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%);
+                 background-color:white; padding:30px; border:2px solid black; border-radius:12px; z-index:1100; width:300px;">
+                <h3>გადახდის ფორმა</h3>
+                <form id="checkout-form">
+                    <label>სახელი:</label>
+                    <input type="text" required style="width: 100%; margin-bottom:10px;"><br>
+                    <label>მისამართი:</label>
+                    <input type="text" required style="width: 100%; margin-bottom:10px;"><br>
+                    <label>ბარათის ნომერი:</label>
+                    <input type="text" required maxlength="16" style="width: 100%; margin-bottom:10px;"><br>
+                    <button type="submit"
+                        style="background-color:green; color:white; padding:10px; width:100%; border:none; border-radius:8px;">გადახდა</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
 </body>
 
 </html>

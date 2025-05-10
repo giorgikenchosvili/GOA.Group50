@@ -118,20 +118,23 @@ h1 {
     font-size: 25px;
 }
 
+.right button{
+    cursor: pointer;
+}
 
-.cart {
+
+/* .cart {
     position: fixed;
     top: 0;
     right: 0;
     width: 300px;
     height: 100%;
-    background-color: #f9f9f9;
+    background-color: #ffffff;
     padding: 20px;
-    transform: translateX(300px);
-    /* transition: right 0.4s ease; */
+    transition: right 0.4s ease;
     z-index: 1000;
 
-}
+} */
 
 
 .cart h3 {
@@ -181,4 +184,15 @@ h1 {
 
 .clear-cart-btn:hover {
     background-color: #cc0000;
+}
+
+#conteiner{
+    position: fixed;
+    display: none;
+    top: 0px;
+    right: 0px;
+    width: 300px;
+    height: 100%;
+    background-color: #ffffff;
+    padding: 20px;
 }
