@@ -11,6 +11,9 @@
 <body>
     <header>
         <div class="logo">GOA</div>
+
+        <button id="burger" class="burger">☰</button>
+
         <div class="nav-links">
             <a href="#programs">სასწავლო კურსები</a>
             <a href="#vision">ხედვა</a>
@@ -19,9 +22,15 @@
             <a href="#founder">დამფუძნებელი</a>
             <a href="#contact">კონტაქტი</a>
         </div>
+
         <div class="title">Goal-Oriented Academy</div>
-        <button class="cart-button">🛒</button>
+        <button class="cart-button">
+            🛒
+            <span class="cart-count">0</span>
+        </button>
+
     </header>
+
 
     <main>
         <div class="goa-info">
@@ -53,21 +62,24 @@
                     <div class="card-one">
                         <img src="" alt="">
                         <p style="color: #00d9ff;" class="ho">speed1</p>
-                        <div class="holi"><button>add to card🛒</button></div>
+                        <div class="holi"><button onclick="addToCart({ name: 'speed1', price: 170 })">add to card🛒</button>
+                        </div>
                         <p style="color: #00d9ff;">price: 170</p>
                     </div>
 
                     <div class="card-one">
                         <img src="" alt="">
                         <p style="color: #00d9ff;" class="ho">speed2</p>
-                        <div class="holi"><button>add to card🛒</button></div>
+                        <div class="holi"><button onclick="addToCart({ name: 'X', price: 100 })">add to card🛒</button>
+                        </div>
                         <p style="color: #00d9ff;">price: 290</p>
                     </div>
 
                     <div class="card-one">
                         <img src="" alt="">
                         <p style="color: #00d9ff;" class="ho">speed3</p>
-                        <div class="holi"><button>add to card🛒</button></div>
+                        <div class="holi"><button onclick="addToCart({ name: 'X', price: 100 })">add to card🛒</button>
+                        </div>
                         <p style="color: #00d9ff;">price: 390</p>
                     </div>
                 </div>
@@ -115,7 +127,8 @@
             <button id="clear-cart" class="clear-cart-btn">clear</button>
             <button id="pay-button" class="clear-cart-btn" style="background-color: green;">გადახდა</button>
 
-            <div id="payment-form" style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%);
+            <div id="payment-form"
+                style="display:none; position:fixed; top:20%; left:50%; transform:translateX(-50%);
                  background-color:white; padding:30px; border:2px solid black; border-radius:12px; z-index:1100; width:300px;">
                 <h3>გადახდის ფორმა</h3>
                 <form id="checkout-form">
@@ -129,7 +142,6 @@
                         style="background-color:green; color:white; padding:10px; width:100%; border:none; border-radius:8px;">გადახდა</button>
                 </form>
             </div>
-
         </div>
     </div>
 

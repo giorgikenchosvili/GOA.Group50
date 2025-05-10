@@ -8,17 +8,17 @@ const cartItems = document.getElementById("cart-items");
 const addToCartButtons = document.querySelectorAll(".holi button");
 
 
-cartButton.addEventListener("click", function(){
+cartButton.addEventListener("click", function () {
     container.style.display = "block";
 });
 
 
-closeCartBtn.addEventListener("click",function(){
+closeCartBtn.addEventListener("click", function () {
     container.style.display = "none";
 });
 
 
-clearCartBtn.addEventListener("click",function(){
+clearCartBtn.addEventListener("click", function () {
     cartItems.innerHTML = "";
 });
 
@@ -44,11 +44,11 @@ const payBtn = document.getElementById("pay-button");
 const paymentForm = document.getElementById("payment-form");
 const checkoutForm = document.getElementById("checkout-form");
 
-payBtn.addEventListener("click",function() {
+payBtn.addEventListener("click", function () {
     paymentForm.style.display = "block";
 });
 
-checkoutForm.addEventListener("submit", function(e) {
+checkoutForm.addEventListener("submit", function (e) {
     e.preventDefault();
     alert("გადახდა წარმატებით შესრულდა! გმადლობთ.");
     paymentForm.style.display = "none";
@@ -56,5 +56,47 @@ checkoutForm.addEventListener("submit", function(e) {
     container.style.display = "none";
 });
 
-    
-    
+const burger = document.getElementById('burger');
+const navLinks = document.querySelector('.nav-links');
+
+burger.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+
+
+let cartItemCount = 0;
+
+function addToCart() {
+    cartItemCount++;
+    updateCartCount();
+}
+
+function updateCartCount() {
+    const cartCount = document.querySelector('.cart-count');
+    cartCount.textContent = cartItemCount;
+    cartCount.style.display = cartItemCount > 0 ? 'inline-block' : 'none';
+}
+
+
+
+function updateCartDisplay() {
+      cartCount.textContent = cart.length;
+
+      cartItemsList.innerHTML = "";
+      let total = 0;
+
+      cart.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `${item.name} - ₾${item.price}`;
+        cartItemsList.appendChild(li);
+        total += item.price;
+      });
+
+      cartTotal.textContent = `₾${total}`;
+    }
+
+
+
+
+
+

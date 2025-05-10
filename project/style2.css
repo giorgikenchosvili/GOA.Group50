@@ -56,6 +56,16 @@
             color: #000000;
         }
 
+        header {
+            flex-wrap: wrap;
+        }
+
+        .nav-links {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+
         .title {
             color: rgb(0, 255, 55);
             font-size: 20px;
@@ -77,6 +87,8 @@
             background-repeat: no-repeat;
             color: white;
         }
+
+
 
         .goa-info {
             background-color: rgba(0, 0, 0, 0.6);
@@ -174,7 +186,7 @@
             color: #333;
         }
 
-        html{
+        html {
             scroll-behavior: smooth;
         }
 
@@ -249,4 +261,133 @@
             background-size: cover;
             background-repeat: no-repeat;
             color: white;
+        }
+
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 20px;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+                margin-top: 15px;
+            }
+
+            .title {
+                margin-top: 15px;
+                text-align: center;
+                font-size: 18px;
+            }
+
+            .mtavars {
+                flex-direction: column;
+                height: auto;
+                width: 100%;
+                align-items: center;
+            }
+
+            .card-one {
+                width: 90%;
+                height: auto;
+            }
+
+            .footer-section {
+                flex: 100%;
+            }
+
+            main {
+                padding: 40px 20px;
+            }
+
+            #conteiner {
+                width: 100%;
+            }
+
+            #payment-form {
+                width: 90%;
+            }
+        }
+
+        body {
+            font-size: 16px;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                font-size: 14px;
+            }
+
+            .cart-button {
+                font-size: 20px;
+            }
+        }
+
+        .burger {
+            display: none;
+            font-size: 28px;
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            .burger {
+                display: block;
+            }
+
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                gap: 10px;
+                background-color: #42a4d8;
+                width: 100%;
+                padding: 10px;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            header {
+                align-items: flex-start;
+            }
+        }
+
+
+
+        .cart-button {
+            position: relative;
+            background: none;
+            border: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+
+        .cart-count {
+            position: absolute;
+            top: -5px;
+            right: -10px;
+            background-color: red;
+            color: white;
+            font-size: 14px;
+            padding: 2px 6px;
+            border-radius: 50%;
+        }
+
+        .cart-details {
+            background-color: #f0f0f0;
+            padding: 10px;
+            margin-top: 10px;
+            display: none;
+            border-radius: 10px;
+        }
+
+        .cart-details.active {
+            display: block;
         }
